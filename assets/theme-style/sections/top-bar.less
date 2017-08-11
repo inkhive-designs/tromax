@@ -1,0 +1,125 @@
+#top-bar {
+  padding: 3px 0px;
+  background: lighten(@header-bg, 2%);
+  .container {
+    @media screen and (max-width: 991px) {
+      text-align: center;
+    }
+    padding: 0;
+  }
+
+  .social-icons {
+    float: right;
+    display: inline-block;
+    padding: 3px;
+    @media screen and (max-width: 991px) {
+      float: none;
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+
+  }
+  .social-icons a {
+    padding: 2px;
+    padding-top: 3px;
+    display: inline-block;
+    color: @header-color;
+    float: none;
+    margin-right: 0px;
+    .transition( ease 0.2s );
+    min-width: 24px;
+    text-align: center;
+    border-radius: 5px;
+    @media screen and (max-width: 600px) {
+      float: none;
+    }
+    &:hover {
+      background: darken(@accent, 1%);
+      color: @onaccent;
+      border-radius: 5px;
+    }
+  }
+
+
+  #util-links {
+    float: left;
+    color: @header-color;
+    font-size: 12px;
+    padding: 6px 0;
+    @media screen and (max-width: 600px) {
+      float: none;
+    }
+    #userlinks, #top-cart {
+      a {
+        display: inline-block;
+        color: lighten(@header-color,5%);
+      }
+      i {
+        margin-right: 5px;
+      }
+    }
+
+    #userlinks {
+      display: inline-block;
+      @media screen and (max-width: 991px) {
+        float: none;
+      }
+      position: relative;
+      a {
+        position: relative;
+      }
+
+    }
+
+
+    #top-cart {
+      display: inline-block;
+      position: relative;
+      margin-right: 10px;
+      &:hover {
+        i {
+          .transform(scale(1.04));
+        }
+      }
+      i {
+        .transition(0.4s all ease);
+        font-size: 16px;
+      }
+
+
+    }
+
+  }
+  @media screen and (max-width: 600px) {
+    .td_mobile_menu_wrap {
+      min-height: 42px;
+      padding: 10px;
+      margin-bottom: 0px;
+      position: relative;
+      display: inline-block;
+      &:after {
+        content: "\f103";
+        font-family: "FontAwesome";
+        color: darken(@onaccent,8%);
+        position: absolute;
+        right: 17px;
+        top: 13px;
+        font-size: 18px;
+      }
+    }
+    .mobileMenu {
+      padding: 5px 8px;
+      border: none;
+      box-shadow: none;
+      background: darken(@header-bg,10%);
+      color: darken(@header-color,8%);
+      background-image: none;
+      -webkit-appearance: none;
+      position: relative;
+      min-width: 155px;
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}

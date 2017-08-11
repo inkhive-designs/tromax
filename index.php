@@ -26,7 +26,7 @@ get_header(); ?>
 				<?php
 					/* Include the Post-Format-specific template for the content.
 					 */
-					do_action('tromax_blog_layout'); 
+					do_action('tromax_blog_layout');
 					
 				?>
 
@@ -36,7 +36,7 @@ get_header(); ?>
 
 		<?php else : ?>
 
-			<?php get_template_part( 'content', 'none' ); ?>
+			<?php get_template_part( '/modules/content/content', 'none' ); ?>
 
 		<?php endif; ?>
 
