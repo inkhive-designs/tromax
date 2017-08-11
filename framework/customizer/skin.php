@@ -17,9 +17,10 @@ function tromax_customize_register_skin($wp_customize) {
         )
     );
 
-    $skins = array( 'default' => __('Default(red)','tromax'),
+    $skins = array( 'default' => __('Default(red)','tromax', 'blue'),
         'orange' =>  __('Orange','tromax'),
         'green' => __('Green','tromax'),
+        'blue' => __('Blue', 'tromax'),
     );
 
     $wp_customize->add_control(
@@ -32,7 +33,7 @@ function tromax_customize_register_skin($wp_customize) {
     );
 
     function tromax_sanitize_skin( $input ) {
-        if ( in_array($input, array('default','orange','brown','green','grayscale') ) )
+        if ( in_array($input, array('default','orange', 'green','blue') ) )
             return $input;
         else
             return '';
