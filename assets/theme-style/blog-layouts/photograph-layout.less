@@ -2,30 +2,37 @@
   .featured-thumb {
     border-top:none;
     text-align:center;
-    opacity:0.5;
     img{
       width:100%;
-      height:360px;
+      opacity:0.5;
     }
     .transition(0.4 all ease);
     &:hover {
       img {
         transform:scale(1.2);
         filter:none;
+        opacity: 10;
       }
     }
   }
   .out-thumb {
-    margin-top:-38%;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    margin-top:-5%;
+    padding:10px;
     height:160px;
     z-index:1;
     background:@header-bg;
     h1{
       font-size:23px;
       a {
-        color:@accent;
+        color:@header-color;
+        text-shadow:2px 1px @accent;
+        font-weight: bold;
+        font-size: 15px;
+        text-transform: uppercase;
+        &:hover {
+          text-decoration:none;
+
+        }
       }
     }
     .entry-excerpt{
@@ -36,8 +43,9 @@
       clear: both;
       margin-top: 5px;
       a {
-        background: @accent;
-        color: @onaccent;
+        background: @onaccent;
+        color: @accent;
+        font-weight:600;
         display: inline-block;
         padding: 3px 8px;
         margin-top: 5px;
@@ -46,7 +54,8 @@
         .transition(0.4s all ease);
         border-radius: 3px;
         &:hover {
-          background: @header-bg;
+          background: @accent;
+          font-weight:600;
           color: @header-color;
         }
       }
@@ -54,15 +63,9 @@
   }
 }
 
-.grid_2_column {
-  padding: 0 10px;
-  @media screen and (min-width: 768px) {
-    &:nth-child(odd) {
-      padding-right: 10px;
-      clear: none;
-    }
-    &:nth-child(3n+1) {
-      clear: left;
-    }
+@media screen and (max-width: 768px) {
+  .photograph .out-thumb {
+    margin-top:-5%;
+    height:175px;
   }
 }

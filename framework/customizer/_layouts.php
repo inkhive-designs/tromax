@@ -40,7 +40,7 @@ function tromax_customize_register_layouts($wp_customize) {
             'choices' => array(
                 'grid' => __('Standard Blog Layout', 'tromax'),
                 'tromax' => __('Tromax Theme Layout', 'tromax'),
-                //'photograph' => __('Photograph', 'layout'),
+                'photograph' => __('Photograph', 'layout'),
             )
         )
     );

@@ -4,7 +4,7 @@
  */
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class('col-md-12 col-sm-12 grid photograph'); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class('col-md-12 col-sm-12 grid tromax'); ?>>
 
 		<div class="featured-thumb col-md-3 col-sm-4">
 			<?php the_post_thumbnail('tromax-sq-thumb'); ?>		
