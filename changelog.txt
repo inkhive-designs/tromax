@@ -1,6 +1,11 @@
 ChangeLog
 =========
 
+Version 1.0.5
+
+	i) New Social Icons
+	ii) New Page Layouts
+
 Version 1.0.4
 
 	i) Upgraded Font Awesome
