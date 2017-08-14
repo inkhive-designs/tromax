@@ -19,6 +19,41 @@ function tromax_customize_register_social_icons($wp_customize){
         'flickr' => __('Flickr','tromax'),
     );
 
+    $social_icons_style = array(
+        'none' => __('Default', 'tromax'),
+        'style1' => __('Style 1', 'tromax'),
+        'style2' => __('Style 2', 'tromax'),
+        'style3' => __('Style 3', 'tromax'),
+    );
+
+    $wp_customize->add_setting('tromax_social_icon_style', array(
+        'default' => 'none',
+        'sanitize_callback' => 'tromax_sanitize_social_style'
+    ));
+
+    function tromax_sanitize_social_style( $input ) {
+        $social_styles = array(
+            'none' ,
+            'style1',
+            'style2',
+            'style3',
+        );
+        if ( in_array($input, $social_styles) )
+            return $input;
+        else
+            return '';
+    }
+
+    $wp_customize->add_control('tromax_social_icon_style', array(
+            'setting' => 'tromax_social_icon_style',
+            'section' => 'tromax_social_section',
+            'label' => __('Social Icon Effects', 'tromax'),
+            'type' => 'select',
+            'choices' => $social_icons_style,
+        )
+    );
+
+
     $social_count = count($social_networks);
 
     for ($x = 1 ; $x <= ($social_count - 3) ; $x++) :

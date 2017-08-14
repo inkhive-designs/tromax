@@ -25,7 +25,7 @@ function tromax_customize_register_layouts($wp_customize) {
 
     function tromax_sanitize_blog_layout($input)
     {
-        if (in_array($input, array('grid', 'tromax')))
+        if (in_array($input, array('grid', 'tromax', 'photograph')))
             return $input;
         else
             return '';
@@ -33,13 +33,14 @@ function tromax_customize_register_layouts($wp_customize) {
 
     $wp_customize->add_control(
         'tromax_blog_layout', array(
-            'label' => __('Select Layout', 'tromax'),
+            'label' => __('Select Layout', 'tromax', 'photograph'),
             'settings' => 'tromax_blog_layout',
             'section' => 'tromax_design_options',
             'type' => 'select',
             'choices' => array(
                 'grid' => __('Standard Blog Layout', 'tromax'),
                 'tromax' => __('Tromax Theme Layout', 'tromax'),
+                'photograph' => __('Photograph', 'layout'),
             )
         )
     );

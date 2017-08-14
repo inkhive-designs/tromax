@@ -19,7 +19,7 @@
     }
 
   }
-  .social-icons a {
+  .social-icons .none {
     padding: 2px;
     padding-top: 3px;
     display: inline-block;
@@ -40,6 +40,109 @@
     }
   }
 
+  .social-icons .style1 {
+    padding: 2px;
+    padding-top: 3px;
+    display: inline-block;
+    color: @header-color;
+    float: none;
+    margin-right: 0px;
+    min-width: 24px;
+    text-align: center;
+    vertical-align: middle;
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    position: relative;
+    transition-property: color;
+    transition-duration: 0.3s;
+    @media screen and (max-width: 600px) {
+      float: none;
+    }
+    &:before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: @accent;
+      transform: scaleY(0);
+      transform-origin: 50% 0;
+      transition-property: transform;
+      transition-duration: 0.3s;
+      transition-timing-function: ease-out;
+    }
+    &:hover {
+      color: @header-color;
+    }
+    &:hover:before {
+      transform: scaleY(1);
+    }
+  }
+
+  @-webkit-keyframes color-flow {
+    from {
+      background-color: @accent;
+    }
+    to {
+      background-color: @header-bg;
+    }
+  }
+
+  @keyframes color-flow {
+    0% {
+      background-color: @accent;
+    }
+    50% {
+      background-color: lighten(@header-bg, 10%);
+    }
+    100% {
+      background-color: @accent;
+    }
+  }
+
+  .social-icons .style2 {
+    padding: 2px;
+    display: inline-block;
+    color: @header-color;
+    float: none;
+    margin-right: 0px;
+    min-width: 24px;
+    border:1px solid @header-color;
+    @media screen and (max-width: 600px) {
+      float: none;
+    }
+    &:hover{
+      animation-name: color-flow;
+      animation-duration: 4s;
+    }
+
+  }
+
+  .social-icons .style3 {
+    padding: 2px;
+    padding-top: 3px;
+    display: inline-block;
+    color: @header-color;
+    float: none;
+    margin-right: 0px;
+    min-width: 24px;
+    vertical-align: middle;
+    backface-visibility: hidden;
+    transition: 0.5s all ease;
+    transition-property: transform;
+    @media screen and (max-width: 600px) {
+      float: none;
+    }
+
+    &:hover {
+      transform:rotate(360deg);
+      background: @onaccent;
+      border:1px dashed @accent;
+      color: @accent;
+    }
+  }
 
   #util-links {
     float: left;
