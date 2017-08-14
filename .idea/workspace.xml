@@ -55,11 +55,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_layouts.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="_layouts.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/framework/customizer/_layouts.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="27" column="40" lean-forward="false" selection-start-line="27" selection-start-column="40" selection-end-line="27" selection-end-column="40" />
+            <state relative-caret-position="425">
+              <caret line="42" column="48" lean-forward="false" selection-start-line="42" selection-start-column="48" selection-end-line="42" selection-end-column="48" />
               <folding />
             </state>
           </provider>
@@ -85,7 +85,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tromax-layout.less" pinned="false" current-in-tab="true">
+      <file leaf-file-name="tromax-layout.less" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/theme-style/blog-layouts/tromax-layout.less">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="170">
@@ -167,8 +167,8 @@
         <option value="$PROJECT_DIR$/assets/theme-style/sections/universal.less" />
         <option value="$PROJECT_DIR$/framework/layouts/content-photograph.php" />
         <option value="$PROJECT_DIR$/assets/theme-style/blog-layouts/photograph-layout.less" />
-        <option value="$PROJECT_DIR$/framework/customizer/_layouts.php" />
         <option value="$PROJECT_DIR$/framework/layouts/content-tromax.php" />
+        <option value="$PROJECT_DIR$/framework/customizer/_layouts.php" />
       </list>
     </option>
   </component>
@@ -432,7 +432,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../klopp" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../tromax-pro" />
     <property name="js.eslint.eslintPackage" value="" />
   </component>
   <component name="RecentsManager">
@@ -550,12 +550,12 @@
       <workItem from="1502522891654" duration="9290000" />
       <workItem from="1502548947763" duration="6288000" />
       <workItem from="1502684977793" duration="593000" />
-      <workItem from="1502688764872" duration="8672000" />
+      <workItem from="1502688764872" duration="9670000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46198000" />
+    <option name="totallyTimeSpent" value="47196000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -894,14 +894,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/framework/customizer/_layouts.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="27" column="40" lean-forward="false" selection-start-line="27" selection-start-column="40" selection-end-line="27" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/framework/layouts/content-tromax.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -914,6 +906,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="21" lean-forward="true" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework/customizer/_layouts.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="42" column="48" lean-forward="false" selection-start-line="42" selection-start-column="48" selection-end-line="42" selection-end-column="48" />
           <folding />
         </state>
       </provider>
