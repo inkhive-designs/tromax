@@ -4,7 +4,6 @@
     text-align:center;
     img{
       width:100%;
-      opacity:0.5;
     }
     .transition(0.4 all ease);
     &:hover {
@@ -16,47 +15,21 @@
     }
   }
   .out-thumb {
-    margin-top:-5%;
     padding:10px;
-    height:160px;
+    position: absolute;
+    bottom: 0;
     z-index:1;
-    background:@header-bg;
+    width: ~"calc(100% - 10px)";
+    background: fade(@header-bg,50%);
     h1{
       font-size:23px;
       a {
         color:@header-color;
-        text-shadow:2px 1px @accent;
         font-weight: bold;
         font-size: 15px;
         text-transform: uppercase;
         &:hover {
           text-decoration:none;
-
-        }
-      }
-    }
-    .entry-excerpt{
-        color:#bfb1b1;
-    }
-    .readmore {
-      display: block;
-      clear: both;
-      margin-top: 5px;
-      a {
-        background: @onaccent;
-        color: @accent;
-        font-weight:600;
-        display: inline-block;
-        padding: 3px 8px;
-        margin-top: 5px;
-        text-transform: uppercase;
-        font-size: 11px;
-        .transition(0.4s all ease);
-        border-radius: 3px;
-        &:hover {
-          background: @accent;
-          font-weight:600;
-          color: @header-color;
         }
       }
     }
@@ -66,6 +39,5 @@
 @media screen and (max-width: 768px) {
   .photograph .out-thumb {
     margin-top:-5%;
-    height:197px;
   }
 }

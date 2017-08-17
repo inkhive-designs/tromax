@@ -1,7 +1,15 @@
 ChangeLog
 =========
 
-Version 1.0.5
+Version 1.0.8
+
+	i) Bug Fixes
+
+Version 1.0.7
+
+	i) Bug Fixes.
+
+Version 1.0.6
 
 	i) New Social Icons
 	ii) New Page Layouts

@@ -17,7 +17,8 @@ function tromax_customize_register_skin($wp_customize) {
         )
     );
 
-    $skins = array( 'default' => __('Default(red)','tromax', 'blue'),
+    $skins = array( 
+    	'default' => __('Default(red)','tromax'),
         'orange' =>  __('Orange','tromax'),
         'green' => __('Green','tromax'),
         'blue' => __('Blue', 'tromax'),

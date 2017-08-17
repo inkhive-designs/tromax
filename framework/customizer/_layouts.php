@@ -33,7 +33,7 @@ function tromax_customize_register_layouts($wp_customize) {
 
     $wp_customize->add_control(
         'tromax_blog_layout', array(
-            'label' => __('Select Layout', 'tromax', 'photograph'),
+            'label' => __('Select Layout', 'tromax'),
             'settings' => 'tromax_blog_layout',
             'section' => 'tromax_design_options',
             'type' => 'select',
