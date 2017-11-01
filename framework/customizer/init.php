@@ -13,6 +13,18 @@
 function tromax_customize_register( $wp_customize ) {
     $wp_customize->get_setting('blogname')->transport = 'postMessage';
     $wp_customize->get_setting('blogdescription')->transport = 'postMessage';
+
+    //Renameing Default Sections
+    $wp_customize->get_section('colors')->title = __('Theme Skins & Colors', 'tromax');
+    $wp_customize->get_section('colors')->panel = 'tromax_design_panel';
+    $wp_customize->get_section('background_image')->panel = 'tromax_design_panel';
+
+    $wp_customize->add_panel('tromax_fetured_content_areas',
+        array(
+            'title' => __('Featured Content Areas', 'tromax'),
+            'priority' => 35,
+        )
+    );
 }
 add_action('customize_register', 'tromax_customize_register');
 
@@ -23,6 +35,7 @@ require_once get_template_directory().'/framework/customizer/header.php';
 require_once get_template_directory().'/framework/customizer/social_icons.php';
 require_once get_template_directory().'/framework/customizer/_layouts.php';
 require_once get_template_directory().'/framework/customizer/featured_news.php';
+require_once get_template_directory().'/framework/customizer/featured_most_recent.php';
 require_once get_template_directory().'/framework/customizer/_misc_scripts.php';
 require_once get_template_directory().'/framework/customizer/skin.php';
 require_once get_template_directory().'/framework/customizer/_google_fonts.php';

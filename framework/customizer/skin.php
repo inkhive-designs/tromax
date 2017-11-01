@@ -1,14 +1,6 @@
 <?php
 function tromax_customize_register_skin($wp_customize) {
     //Select the Default Theme Skin
-    $wp_customize->add_section(
-        'tromax_skin_options',
-        array(
-            'title'     => __('Choose Skin','tromax'),
-            'priority'  => 39,
-        )
-    );
-
     $wp_customize->add_setting(
         'tromax_skin',
         array(
@@ -27,7 +19,7 @@ function tromax_customize_register_skin($wp_customize) {
     $wp_customize->add_control(
         'tromax_skin',array(
             'settings' => 'tromax_skin',
-            'section'  => 'tromax_skin_options',
+            'section'  => 'colors',
             'type' => 'select',
             'choices' => $skins,
         )

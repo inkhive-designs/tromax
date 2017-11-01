@@ -6,6 +6,7 @@ function tromax_customize_register_featured_news($wp_customize) {
         array(
             'title'     => __('Featured Posts','tromax'),
             'priority'  => 35,
+            'panel'     => 'tromax_fetured_content_areas'
         )
     );
 

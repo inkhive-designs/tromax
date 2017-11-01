@@ -23,7 +23,9 @@ get_template_part('modules/header/head'); ?>
 	<?php get_template_part('/framework/featured-components/featured', 'showcase'); ?>
 	
 	<?php get_template_part('/framework/featured-components/featured', 'news'); ?>
-	
+
+	<?php get_template_part('/framework/featured-components/featured-most', 'recent'); ?>
+
 	<div class="mega-container">
 		
 	
