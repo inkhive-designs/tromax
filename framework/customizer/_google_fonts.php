@@ -6,7 +6,8 @@ function tromax_customize_register_google_fonts($wp_customize) {
         array(
             'title'     => __('Google Web Fonts','tromax'),
             'priority'  => 41,
-            'description' => __('Defaults: Lato, Open Sans.','tromax')
+            'description' => __('Defaults: Lato, Open Sans.','tromax'),
+            'panel' => 'tromax_design_panel'
         )
     );
 

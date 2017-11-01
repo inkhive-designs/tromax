@@ -1,9 +1,20 @@
 ChangeLog
 =========
 
+Version 1.1.0
+
+    i) New Featured Area
+    ii) Minor Bugs Fixed
+
+Version 1.0.9
+
+    i) New Photograph Blog Layout
+    ii) New Blue Skin
+
 Version 1.0.8
 
-	i) Bug Fixes
+	i) New Framework
+	ii) Bug Fixes
 
 Version 1.0.7
 
