@@ -21,7 +21,7 @@
 				        while ( $loop->have_posts() ) : 
 				        	$loop->the_post(); 
 				        ?>
-						<div class="fg-item-container col-md-3 col-sm-3 col-xs-6">
+						<div class="fg-item-container col-md-3 col-sm-6 col-xs-12">
 							<div class="fg-item">
 								<a href="<?php the_permalink() ?>" title="<?php the_title_attribute() ?>">
 									<?php the_post_thumbnail('tromax-sq-thumb'); ?>

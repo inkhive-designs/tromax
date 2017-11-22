@@ -12,7 +12,7 @@
         bottom: 2px;
         right: 2px;
         left: 2px;
-        background: fade(@header-bg,50%);
+        background: fade(@header-bg, 50%);
         color: @header-color;
         h3 {
           font-size: 14px;
@@ -22,8 +22,15 @@
 
       }
       img {
-        .transition(0.4s all ease);
+        width: 100%;
       }
+      @media screen and (min-width: 767px) {
+        img {
+          .transition(0.4s all ease);
+          width: 100%;
+        }
+      }
+      @media screen and (min-width: 767px){
       &:hover {
         img {
           .transform(scale(1.02));
@@ -32,6 +39,7 @@
           .transition(0.8s all ease);
         }
       }
+    }
     }
 
   }

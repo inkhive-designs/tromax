@@ -6,11 +6,13 @@
       width:100%;
     }
     .transition(0.4 all ease);
-    &:hover {
-      img {
-        transform:scale(1.2);
-        filter:none;
-        opacity: 10;
+    @media screen and (min-width: 767px) {
+      &:hover {
+        img {
+          transform: scale(1.2);
+          filter: none;
+          opacity: 10;
+        }
       }
     }
   }
@@ -20,6 +22,7 @@
     bottom: 0;
     z-index:1;
     width: ~"calc(100% - 10px)";
+
     background: fade(@header-bg,50%);
     h1{
       font-size:23px;
@@ -28,8 +31,10 @@
         font-weight: bold;
         font-size: 15px;
         text-transform: uppercase;
-        &:hover {
-          text-decoration:none;
+        @media screen and (min-width: 767px) {
+          &:hover {
+            text-decoration: none;
+          }
         }
       }
     }
@@ -39,5 +44,6 @@
 @media screen and (max-width: 768px) {
   .photograph .out-thumb {
     margin-top:-5%;
+    width: 100%;
   }
 }

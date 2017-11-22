@@ -21,9 +21,11 @@
         font-size: 11px;
         .transition(0.4s all ease);
         border-radius: 3px;
-        &:hover {
-          background: @header-bg;
-          color: @header-color;
+        @media screen and (min-width: 767px) {
+          &:hover {
+            background: @header-bg;
+            color: @header-color;
+          }
         }
       }
     }

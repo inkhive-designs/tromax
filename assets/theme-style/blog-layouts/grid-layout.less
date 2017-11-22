@@ -28,13 +28,15 @@
     img {
       .transition(0.4s all ease);
     }
-    &:hover {
-      img {
-        .transition(0.4s all ease);
-        -moz-filter: brightness(0.9);
-        -webkit-filter: brightness(0.9);
-        filter: brightness(0.9);
+    @media screen and (min-width: 767px) {
+      &:hover {
+        img {
+          .transition(0.4s all ease);
+          -moz-filter: brightness(0.9);
+          -webkit-filter: brightness(0.9);
+          filter: brightness(0.9);
 
+        }
       }
     }
   }
@@ -61,14 +63,17 @@
     }
     .postedon {
       font-size: 12px;
-      color: #aaa;
-      font-weight: lighter;
+      color: darken(@content,10%);
+      text-transform: uppercase;
+      font-weight: bold;
       margin-bottom: 5px;
       a {
         color: #999;
         text-decoration: underline;
-        &:hover {
-          color: @accent;
+        @media screen and (min-width: 768px) {
+          &:hover {
+            color: @accent;
+          }
         }
 
       }

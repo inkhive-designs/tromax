@@ -5,7 +5,7 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class('col-md-6 col-sm-6 grid grid_2_column photograph'); ?>>
-
+    <a href="<?php the_permalink();?>">
     <div class="featured-thumb col-md-12 col-sm-12">
         <?php if (has_post_thumbnail()) : ?>
             <a href="<?php the_permalink() ?>"><?php the_post_thumbnail('tromax-pop-thumb'); ?></a>
@@ -20,5 +20,5 @@
             <span class="entry-excerpt">
         </header><!-- .entry-header -->
     </div><!--.out-thumb-->
-
+    </a>
 </article><!-- #post-## -->

@@ -5,7 +5,7 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class('col-md-12 col-sm-12 grid tromax'); ?>>
-
+    <a href="<?php the_permalink();?>">
 		<div class="featured-thumb col-md-3 col-sm-4">
 			<?php the_post_thumbnail('tromax-sq-thumb'); ?>		
 		</div><!--.featured-thumb-->
@@ -17,5 +17,5 @@
 				<span class="readmore"><a href="<?php the_permalink() ?>"><?php _e('Read More','tromax'); ?></a></span>
 			</header><!-- .entry-header -->
 		</div><!--.out-thumb-->
-							
+    </a>
 </article><!-- #post-## -->
