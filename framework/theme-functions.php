@@ -5,6 +5,7 @@
  */
 
 //Import Admin Modules
+require get_template_directory() . '/framework/admin-modules/admin_styles.php';
 require get_template_directory() . '/framework/admin-modules/register_styles.php';
 require get_template_directory() . '/framework/admin-modules/theme_setup.php';
 require get_template_directory() . '/framework/admin-modules/register_widgets.php';

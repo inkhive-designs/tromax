@@ -5,8 +5,12 @@
   }
   .featured-mr-container {
     margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
     .featured-mr {
-      overflow: auto;
+      background: white;
+      overflow: hidden;
+      padding: 0;
       margin-bottom: 10px;
       transition: 0.8s all ease;
       @media screen and (max-width: 991px) and (min-width: 768px) {
@@ -18,11 +22,11 @@
         &:hover {
           transition: none;
         }
-        background: fade(@content, 5%);
+        background: #f9f9f9;
       }
       &:hover {
         transition: 0.8s all ease;
-        background: fade(@content, 5%);
+        background: #f9f9f9;
       }
       .feature-mr-item {
         padding: 0;

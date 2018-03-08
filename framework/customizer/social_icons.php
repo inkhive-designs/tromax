@@ -4,6 +4,7 @@ function tromax_customize_register_social_icons($wp_customize){
     $wp_customize->add_section('tromax_social_section', array(
         'title' => __('Social Icons','tromax'),
         'priority' => 44 ,
+        'panel' => 'tromax_header_panel'
     ));
 
     $social_networks = array( //Redefinied in Sanitization Function.

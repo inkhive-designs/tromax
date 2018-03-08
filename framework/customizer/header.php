@@ -1,9 +1,15 @@
 <?php
 function tromax_customize_register_header($wp_customize) {
+    $wp_customize->add_panel('tromax_header_panel', array(
+            'title'     => __('Header Settings','tromax'),
+            'priority'  => 20,
+    ));
+
     //Logo Settings
     $wp_customize->add_section( 'title_tagline' , array(
         'title'      => __( 'Title, Tagline & Logo', 'tromax' ),
         'priority'   => 30,
+        'panel' => 'tromax_header_panel'
     ) );
 
     $wp_customize->add_setting( 'tromax_logo_resize' , array(

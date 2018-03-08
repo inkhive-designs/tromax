@@ -22,7 +22,7 @@
                     while ( $loop->have_posts() ) :
                         $loop->the_post();
                         ?>
-                        <div class="featured-mr col-md-6 col-sm-12 grid_2_column">
+                        <div class="featured-mr col-md-6 col-sm-12">
                             <div class="feature-mr-item col-md-6 col-sm-6 col-xs-12">
                                 <div class="fg-item">
                                     <a href="<?php the_permalink() ?>" title="<?php the_title_attribute() ?>">
