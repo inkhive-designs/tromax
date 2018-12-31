@@ -25,6 +25,9 @@ if ( ! function_exists( 'tromax_setup' ) ) :
          */
         load_theme_textdomain( 'tromax', get_template_directory() . '/languages' );
 
+        //Guttenberg fullscreen content
+        add_theme_support( 'align-wide' );
+
         /**
          * Set the content width based on the theme's design and stylesheet.
          */

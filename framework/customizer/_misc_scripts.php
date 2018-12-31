@@ -21,7 +21,7 @@ function tromax_customize_register_misc( $wp_customize ) {
             'tromax_pro',
             array(
                 'description'	=> '<a class="tromax-important-links" href="https://inkhive.com/contact-us/" target="_blank">'.__('InkHive Support Forum', 'tromax').'</a>
-                                    <a class="tromax-important-links" href="http://demo.inkhive.com/tromax-plus/" target="_blank">'.__('Tromax Plus Live Demo', 'tromax').'</a>
+                                    <a class="tromax-important-links" href="https://demo.rohitink.com/tromax/" target="_blank">'.__('Tromax Plus Live Demo', 'tromax').'</a>
                                     <a class="tromax-important-links" href="https://www.facebook.com/inkhivethemes/" target="_blank">'.__('We Love Our Facebook Fans', 'tromax').'</a>
                                     <a class="tromax-important-links" href="https://wordpress.org/support/theme/tromax/reviews" target="_blank">'.__('Review Tromax on WordPress', 'tromax').'</a>',
                 'section' => 'tromax_sec_pro',

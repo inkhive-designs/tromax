@@ -14,7 +14,7 @@ function tromax_customize_register_social_icons($wp_customize){
         'google-plus' => __('Google Plus','tromax'),
         'instagram' => __('Instagram','tromax'),
         'rss' => __('RSS Feeds','tromax'),
-        'vine' => __('Vine','tromax'),
+        'pinterest' => __('Pinterest','tromax'),
         'vimeo-square' => __('Vimeo','tromax'),
         'youtube' => __('Youtube','tromax'),
         'flickr' => __('Flickr','tromax'),
@@ -96,7 +96,7 @@ function tromax_customize_register_social_icons($wp_customize){
             'google-plus',
             'instagram',
             'rss',
-            'vine',
+            'pinterest',
             'vimeo-square',
             'youtube',
             'flickr'
